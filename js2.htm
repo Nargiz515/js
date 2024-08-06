@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        const div = document.querySelector("div")
+        const ad = ['Nargiz']
+
+        function go() {
+            for (let i = 0; i < ad.length; i++) {
+                let herfler = ad[i]
+                for (let j = 0; j < ad[i].length; j++) {
+                    function count() {
+                        div.innerHTML += herfler[j]
+                    }
+                    setTimeout(count, j * 1000)
+                }
+            }
+        }
+        go()      
+    </script>
+</body>
+
+</html>
